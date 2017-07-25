@@ -32,3 +32,49 @@ nav a{
 .nosubrayado{
   text-decoration: none;
 }
+#velero{
+  width: 100%;
+  box-shadow: 2px 2px 1px #02010a;
+  -webkit-box-shadow: 2px 2px 1px #02010a;
+}
+div.contenedor{
+  width: 86%;
+  padding: 2.5% 7% 2.5% 7%;
+  background-color: #82c3a6;
+}
+#imagensecundaria{
+  background-color: #d5c75f;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: row;
+  padding: 2.5% 5% 2.5% 5%;
+}
+div.paisajes{
+  width: 50%;
+  margin-right: 2.5%;
+}
+div.retratos{
+  width: 50%;
+  margin-left: 2.5%;
+}
+figcaption{
+  text-align: center;
+  text-decoration: underline;
+}
+a>img{
+  width: 100%;
+  box-shadow: 2px 2px 1px #02010a;
+  }
+.paisajes img:hover{
+  transform: rotate(10deg);
+  transform:
+  transition: 1s;
+  agrega color de sombra #82c3a6 y borde 2px
+}
+
+
+footer{
+  clear: both;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #C6d5c5;
+}
