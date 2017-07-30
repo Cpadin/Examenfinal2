@@ -82,7 +82,7 @@ footer img{
   box-shadow: none;
   -webkit-box-shadow: none;
 }
-@media (max-width: 639px){
+@media (max-width: 899px){
   .contenido{
     width: 100%;
   }
@@ -108,7 +108,7 @@ footer img{
     margin-bottom: 4%;
   }
 }
-@media (min-width: 640px) {
+@media (min-width: 900px) {
   .contenido{
     width: 900px;
     margin-left: auto;
