@@ -1,80 +1,155 @@
 body{
   font-family: "Dancing Script";
   background-color: #02010a;
-  width: 90%;
-  margin-left: 5%;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+@-webkit-keyframes slidein{
+ 0%{
+  margin-top: 150%;
+ }
+ 60%{
+    margin-top: -5%;
+ }
+ 100%{
+   margin-top: 0%;
+ }
 }
 header{
-  height: 100px;
+  height: 130px;
   background-color: #5b7989;
   color: white;
   border-radius: 10px 10px 0px 0px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding-left: 1%;
-}
-header h1{
-  text-shadow: 2px 2px #02010a;
-  width: 75%;
-  margin-left: 15px;
-}
-nav{
-  margin-top: 32px;
-  width: 25%;
-  padding-right: 15px;
+  animation-duration: 1s;
+  animation-name: slidein;
 }
 nav a{
-  font-size: 1.2em;
   color: white;
   margin-left: 15px;
 }
 .nosubrayado{
   text-decoration: none;
 }
-#velero{
+img{
   width: 100%;
   box-shadow: 2px 2px 1px #02010a;
   -webkit-box-shadow: 2px 2px 1px #02010a;
 }
-div.contenedor{
-  width: 86%;
-  padding: 2.5% 7% 2.5% 7%;
+div.velero{
+  width: 80%;
+  padding: 5% 10% 5% 10%;
   background-color: #82c3a6;
 }
 #imagensecundaria{
   background-color: #d5c75f;
   border: 1px solid black;
-  display: flex;
-  flex-flow: row;
-  padding: 2.5% 5% 2.5% 5%;
-}
-div.paisajes{
-  width: 50%;
-  margin-right: 2.5%;
-}
-div.retratos{
-  width: 50%;
-  margin-left: 2.5%;
-}
+  padding: 2.5% 7% 2.5% 7%;
+  }
 figcaption{
   text-align: center;
+  font-weight: bold;
   text-decoration: underline;
 }
-a>img{
-  width: 100%;
-  box-shadow: 2px 2px 1px #02010a;
-  }
 .paisajes img:hover{
-  transform: rotate(10deg);
-  transform:
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg), ;
   transition: 1s;
-  agrega color de sombra #82c3a6 y borde 2px
+  -webkit-box-shadow: 2px 2px 1px #82c3a6;
+  box-shadow: 4px 4px 1px #82c3a6;
+  border: 2px solid #82c3a6;
 }
-
-
+.retratos img:hover{
+  -webkit-transform: translate(20px,-5px);
+  transform: translate(20px,-5px);
+  transition: 1s;
+  -webkit-box-shadow: 2px 2px 1px #82c3a6;
+  box-shadow: 4px 4px 1px #82c3a6;
+  border: 2px solid #82c3a6;
+}
 footer{
   clear: both;
   border-radius: 0px 0px 10px 10px;
   background-color: #C6d5c5;
+  padding: 3%;
+}
+footer div{
+  padding: 2%;
+  font-weight: bold;
+}
+footer img{
+  width: 12%;
+  vertical-align: middle;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+@media (max-width: 639px){
+  .contenido{
+    width: 100%;
+  }
+  header{
+      padding: 5px;
+  }
+  h1{
+    font-size: 1.7em;
+    text-align: center;
+    text-shadow: 2px 2px #02010a;
+    }
+  nav{
+    font-size: 1.1em;
+    text-align: center;
+    text-shadow: 2px 2px #02010a;
+  }
+  div.paisajes{
+    padding: 2.5%;
+    margin-bottom: 4%;
+  }
+  div.retratos{
+    padding: 2.5%;
+    margin-bottom: 4%;
+  }
+}
+@media (min-width: 640px) {
+  .contenido{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  h1{
+    text-shadow: 2px 2px #02010a;
+    width: 75%;
+    padding: 15px;
+    margin-left: 10px;
+  }
+  nav{
+    font-size: 1.2em;
+    margin-top: 48px;
+    width: 25%;
+    padding-right: 25px;
+  }
+  #imagensecundaria{
+    display: flex;
+    flex-direction: row;
+  }
+  div.paisajes{
+    width: 50%;
+    margin-right: 2.5%;
+  }
+  div.retratos{
+    width: 50%;
+    margin-left: 2.5%;
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  footer div{
+    width: 25%;
+ }
 }
